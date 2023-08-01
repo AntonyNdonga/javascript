@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .pie {
+            font-size: 50px;
+        }
+
+        .r {
+            font-size: 50px;
+        }
+
+        .total {
+            font-size: 100px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pie" id="pie">3.142</div>
+
+    <div class="r" id="r">12</div>
+
+    <div class="total" id="total"></div>
+    <script>
+        let pie = document.getElementById("pie").innerText;
+        let r = document.getElementById("r").innerText;
+        let area = Number(pie) * Number(r) * Number(r);
+        document.getElementById("total").innerText = area
+
+    </script>
+
+
+</body>
+
+</html>
